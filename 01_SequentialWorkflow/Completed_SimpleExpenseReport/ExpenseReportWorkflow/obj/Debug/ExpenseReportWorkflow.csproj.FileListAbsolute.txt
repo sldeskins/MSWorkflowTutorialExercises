@@ -1,0 +1,5 @@
+C:\Exercises\Tutorials_Workflow\Exercises\SimpleExpenseReport\ExpenseReportWorkflow\bin\Debug\ExpenseReportWorkflow.dll
+C:\Exercises\Tutorials_Workflow\Exercises\SimpleExpenseReport\ExpenseReportWorkflow\bin\Debug\ExpenseReportWorkflow.pdb
+C:\Exercises\Tutorials_Workflow\Exercises\SimpleExpenseReport\ExpenseReportWorkflow\obj\Debug\ExpenseReportWorkflow.csprojResolveAssemblyReference.cache
+C:\Exercises\Tutorials_Workflow\Exercises\SimpleExpenseReport\ExpenseReportWorkflow\obj\Debug\ExpenseReportWorkflow.dll
+C:\Exercises\Tutorials_Workflow\Exercises\SimpleExpenseReport\ExpenseReportWorkflow\obj\Debug\ExpenseReportWorkflow.pdb

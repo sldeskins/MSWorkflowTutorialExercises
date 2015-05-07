@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleExpenseReport", "SimpleExpenseReport\SimpleExpenseReport.csproj", "{ECE1B79A-2E7B-4509-8DAE-400306D1E4DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpenseReportWorkflow", "ExpenseReportWorkflow\ExpenseReportWorkflow.csproj", "{9E95CC15-7963-4F07-8334-CCADDFD89EC2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECE1B79A-2E7B-4509-8DAE-400306D1E4DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECE1B79A-2E7B-4509-8DAE-400306D1E4DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECE1B79A-2E7B-4509-8DAE-400306D1E4DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECE1B79A-2E7B-4509-8DAE-400306D1E4DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E95CC15-7963-4F07-8334-CCADDFD89EC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E95CC15-7963-4F07-8334-CCADDFD89EC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E95CC15-7963-4F07-8334-CCADDFD89EC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E95CC15-7963-4F07-8334-CCADDFD89EC2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

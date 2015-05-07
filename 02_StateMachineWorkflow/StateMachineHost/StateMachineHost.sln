@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateMachineHost", "StateMachineHost\StateMachineHost.csproj", "{A051183B-2DFA-470C-B57B-A6FDBC7DD926}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateMachineWorkflow", "StateMachineWorkflow\StateMachineWorkflow.csproj", "{6B82807A-BC79-4BDB-949F-28C1678DC1EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A051183B-2DFA-470C-B57B-A6FDBC7DD926}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A051183B-2DFA-470C-B57B-A6FDBC7DD926}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A051183B-2DFA-470C-B57B-A6FDBC7DD926}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A051183B-2DFA-470C-B57B-A6FDBC7DD926}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B82807A-BC79-4BDB-949F-28C1678DC1EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B82807A-BC79-4BDB-949F-28C1678DC1EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B82807A-BC79-4BDB-949F-28C1678DC1EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B82807A-BC79-4BDB-949F-28C1678DC1EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

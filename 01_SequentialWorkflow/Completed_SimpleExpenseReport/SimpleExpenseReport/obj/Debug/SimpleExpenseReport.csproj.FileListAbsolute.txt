@@ -1,0 +1,14 @@
+C:\Exercises\Tutorials_Workflow\Exercises\SimpleExpenseReport\SimpleExpenseReport\bin\Debug\SimpleExpenseReport.exe.config
+C:\Exercises\Tutorials_Workflow\Exercises\SimpleExpenseReport\SimpleExpenseReport\bin\Debug\SimpleExpenseReport.exe
+C:\Exercises\Tutorials_Workflow\Exercises\SimpleExpenseReport\SimpleExpenseReport\bin\Debug\SimpleExpenseReport.pdb
+C:\Exercises\Tutorials_Workflow\Exercises\SimpleExpenseReport\SimpleExpenseReport\obj\Debug\SimpleExpenseReport.csprojResolveAssemblyReference.cache
+C:\Exercises\Tutorials_Workflow\Exercises\SimpleExpenseReport\SimpleExpenseReport\obj\Debug\SimpleExpenseReport.MainForm.resources
+C:\Exercises\Tutorials_Workflow\Exercises\SimpleExpenseReport\SimpleExpenseReport\obj\Debug\SimpleExpenseReport.Properties.Resources.resources
+C:\Exercises\Tutorials_Workflow\Exercises\SimpleExpenseReport\SimpleExpenseReport\obj\Debug\SimpleExpenseReport.csproj.GenerateResource.Cache
+C:\Exercises\Tutorials_Workflow\Exercises\SimpleExpenseReport\SimpleExpenseReport\obj\Debug\SimpleExpenseReport.exe
+C:\Exercises\Tutorials_Workflow\Exercises\SimpleExpenseReport\SimpleExpenseReport\obj\Debug\SimpleExpenseReport.pdb
+C:\Exercises\Tutorials_Workflow\Exercises\SimpleExpenseReport\SimpleExpenseReport\bin\Debug\ExpenseReportWorkflow.dll
+C:\Exercises\Tutorials_Workflow\Exercises\SimpleExpenseReport\SimpleExpenseReport\bin\Debug\ExpenseReportWorkflow.pdb
+C:\Exercises\Tutorials_Workflow\SequentialWorkflow\Completed_SimpleExpenseReport\SimpleExpenseReport\bin\Debug\SimpleExpenseReport.exe.config
+C:\Exercises\Tutorials_Workflow\SequentialWorkflow\Completed_SimpleExpenseReport\SimpleExpenseReport\obj\Debug\SimpleExpenseReport.exe
+C:\Exercises\Tutorials_Workflow\SequentialWorkflow\Completed_SimpleExpenseReport\SimpleExpenseReport\obj\Debug\SimpleExpenseReport.pdb

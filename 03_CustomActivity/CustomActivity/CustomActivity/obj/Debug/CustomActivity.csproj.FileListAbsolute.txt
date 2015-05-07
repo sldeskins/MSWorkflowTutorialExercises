@@ -1,0 +1,7 @@
+C:\Exercises\MSWorkflowTutorialExercises\03_CustomActivity\CustomActivity\CustomActivity\bin\Debug\CustomActivity.exe
+C:\Exercises\MSWorkflowTutorialExercises\03_CustomActivity\CustomActivity\CustomActivity\bin\Debug\CustomActivity.pdb
+C:\Exercises\MSWorkflowTutorialExercises\03_CustomActivity\CustomActivity\CustomActivity\obj\Debug\CustomActivity.csprojResolveAssemblyReference.cache
+C:\Exercises\MSWorkflowTutorialExercises\03_CustomActivity\CustomActivity\CustomActivity\obj\Debug\CustomActivity.Properties.Resources.resources
+C:\Exercises\MSWorkflowTutorialExercises\03_CustomActivity\CustomActivity\CustomActivity\obj\Debug\CustomActivity.csproj.GenerateResource.Cache
+C:\Exercises\MSWorkflowTutorialExercises\03_CustomActivity\CustomActivity\CustomActivity\obj\Debug\CustomActivity.exe
+C:\Exercises\MSWorkflowTutorialExercises\03_CustomActivity\CustomActivity\CustomActivity\obj\Debug\CustomActivity.pdb

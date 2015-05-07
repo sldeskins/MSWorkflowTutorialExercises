@@ -1,0 +1,30 @@
+tutorial and files from here  06 May 15
+
+https://msdn.microsoft.com/en-us/library/vstudio/ms733608%28v=vs.90%29.aspx
+
+Tutorial: Create a Sequential Workflow
+    Demonstrates the steps that are required to create a simple sequential workflow.
+
+Tutorial: Create a State Machine Workflow
+    Demonstrates how to create a state machine-based workflow.
+
+Tutorial: Create a Custom WF Activity
+    Describes the steps required to start developing your own custom activities.
+
+Tutorial: Host the WF Runtime
+    Shows how to accomplish various tasks related to hosting the Windows Workflow Foundation runtime engine.
+
+Tutorial: Use Rules and Conditions in WF
+    Shows how to use rules and conditions in workflows.
+
+Tutorial: Create a Workflow Application with ASP.NET
+    Demonstrates how to host a workflow in ASP.NET and the unique challenges that scenario presents.
+
+Tutorial: Hosting the WF Designer
+    Shows how to create a Windows Form-based application that hosts the Windows Workflow Foundation Designer.
+
+Tutorial: Create a Durable Service
+    Shows how to create a durable service that persists its state information to a SQL database.
+
+Tutorial: Create a Workflow Service
+    Shows how to create a workflow service that combines various aspects of Windows Workflow Foundation and WCF into one service.

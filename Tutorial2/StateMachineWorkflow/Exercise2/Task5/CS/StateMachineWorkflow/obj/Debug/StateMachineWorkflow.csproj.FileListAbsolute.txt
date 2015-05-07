@@ -1,0 +1,5 @@
+C:\Exercises\MSWorkflowTutorialExercises\Tutorial2\StateMachineWorkflow\Exercise2\Task5\CS\StateMachineWorkflow\bin\Debug\StateMachineWorkflow.exe
+C:\Exercises\MSWorkflowTutorialExercises\Tutorial2\StateMachineWorkflow\Exercise2\Task5\CS\StateMachineWorkflow\bin\Debug\StateMachineWorkflow.pdb
+C:\Exercises\MSWorkflowTutorialExercises\Tutorial2\StateMachineWorkflow\Exercise2\Task5\CS\StateMachineWorkflow\obj\Debug\StateMachineWorkflow.csprojResolveAssemblyReference.cache
+C:\Exercises\MSWorkflowTutorialExercises\Tutorial2\StateMachineWorkflow\Exercise2\Task5\CS\StateMachineWorkflow\obj\Debug\StateMachineWorkflow.exe
+C:\Exercises\MSWorkflowTutorialExercises\Tutorial2\StateMachineWorkflow\Exercise2\Task5\CS\StateMachineWorkflow\obj\Debug\StateMachineWorkflow.pdb
