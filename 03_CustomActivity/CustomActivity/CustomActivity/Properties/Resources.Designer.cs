@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CustomActivity.Properties
+namespace WCommom.Properties// CustomActivity.Properties
 {
 
 
