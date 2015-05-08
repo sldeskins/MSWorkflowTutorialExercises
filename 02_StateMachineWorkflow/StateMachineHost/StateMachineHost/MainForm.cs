@@ -35,8 +35,6 @@ namespace StateMachineHost
 
         private Dictionary<string, List<string>> orderHistory;
 
-
-
         private string[] inventoryItems = {"Apple", "Orange", 
             "Banana", "Pear", "Watermelon", "Grapes" };
 

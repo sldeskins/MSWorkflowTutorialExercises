@@ -15,8 +15,12 @@ namespace StateMachineWorkflow
 {
     public sealed partial class OrderProcessingWorkflow : StateMachineWorkflowActivity
     {
-        private NewOrderEventArgs receivedOrderDetails;
 
+
+        //
+        private NewOrderEventArgs receivedOrderDetails = null;
+
+        // OrderProcessingStateActivity Activities
         private Guid orderId;
         public Guid Id
         {
@@ -53,7 +57,7 @@ namespace StateMachineWorkflow
             InitializeComponent();
         }
 
-        private void OrderRecieved ( object sender, EventArgs e )
+        private void OrderReceived ( object sender, EventArgs e )
         {
             this.orderId = receivedOrderDetails.ItemId;
             this.orderItem = receivedOrderDetails.Item;
@@ -103,6 +107,13 @@ namespace StateMachineWorkflow
                 base.SetValue(StateMachineWorkflow.OrderProcessingWorkflow.invokeOrderProcessedStatusUpdate_newStatus1Property, value);
             }
         }
+
+        private void newOrderExternalEvent_Invoked ( object sender, ExternalDataEventArgs e )
+        {
+
+        }
+
+
 
 
     }

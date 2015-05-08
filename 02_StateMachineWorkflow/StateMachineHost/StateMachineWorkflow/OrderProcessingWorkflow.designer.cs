@@ -15,6 +15,11 @@ namespace StateMachineWorkflow
 {
     partial class OrderProcessingWorkflow
     {
+
+
+
+
+
         #region Designer generated code
 
         /// <summary> 
@@ -26,14 +31,6 @@ namespace StateMachineWorkflow
         private void InitializeComponent ()
         {
             this.CanModifyActivities = true;
-            System.Workflow.ComponentModel.ActivityBind activitybind1 = new System.Workflow.ComponentModel.ActivityBind();
-            System.Workflow.ComponentModel.WorkflowParameterBinding workflowparameterbinding1 = new System.Workflow.ComponentModel.WorkflowParameterBinding();
-            System.Workflow.ComponentModel.ActivityBind activitybind2 = new System.Workflow.ComponentModel.ActivityBind();
-            System.Workflow.ComponentModel.WorkflowParameterBinding workflowparameterbinding2 = new System.Workflow.ComponentModel.WorkflowParameterBinding();
-            System.Workflow.ComponentModel.ActivityBind activitybind3 = new System.Workflow.ComponentModel.ActivityBind();
-            System.Workflow.ComponentModel.WorkflowParameterBinding workflowparameterbinding3 = new System.Workflow.ComponentModel.WorkflowParameterBinding();
-            System.Workflow.ComponentModel.ActivityBind activitybind4 = new System.Workflow.ComponentModel.ActivityBind();
-            System.Workflow.ComponentModel.WorkflowParameterBinding workflowparameterbinding4 = new System.Workflow.ComponentModel.WorkflowParameterBinding();
             this.setStateActivityOrderCompleted = new System.Workflow.Activities.SetStateActivity();
             this.invokeOrderProcessedStatusUpdate = new System.Workflow.Activities.CallExternalMethodActivity();
             this.invokeProcessingNewOrderStatusUpdate = new System.Workflow.Activities.CallExternalMethodActivity();
@@ -56,32 +53,12 @@ namespace StateMachineWorkflow
             this.invokeOrderProcessedStatusUpdate.InterfaceType = typeof(StateMachineWorkflow.IOrderingService);
             this.invokeOrderProcessedStatusUpdate.MethodName = "ItemStatusUpdate";
             this.invokeOrderProcessedStatusUpdate.Name = "invokeOrderProcessedStatusUpdate";
-            activitybind1.Name = "OrderProcessingWorkflow";
-            activitybind1.Path = "Id";
-            workflowparameterbinding1.ParameterName = "orderId";
-            workflowparameterbinding1.SetBinding(System.Workflow.ComponentModel.WorkflowParameterBinding.ValueProperty, ((System.Workflow.ComponentModel.ActivityBind)(activitybind1)));
-            activitybind2.Name = "OrderProcessingWorkflow";
-            activitybind2.Path = "ItemStatus";
-            workflowparameterbinding2.ParameterName = "newStatus";
-            workflowparameterbinding2.SetBinding(System.Workflow.ComponentModel.WorkflowParameterBinding.ValueProperty, ((System.Workflow.ComponentModel.ActivityBind)(activitybind2)));
-            this.invokeOrderProcessedStatusUpdate.ParameterBindings.Add(workflowparameterbinding1);
-            this.invokeOrderProcessedStatusUpdate.ParameterBindings.Add(workflowparameterbinding2);
             // 
             // invokeProcessingNewOrderStatusUpdate
             // 
             this.invokeProcessingNewOrderStatusUpdate.InterfaceType = typeof(StateMachineWorkflow.IOrderingService);
             this.invokeProcessingNewOrderStatusUpdate.MethodName = "ItemStatusUpdate";
             this.invokeProcessingNewOrderStatusUpdate.Name = "invokeProcessingNewOrderStatusUpdate";
-            activitybind3.Name = "OrderProcessingWorkflow";
-            activitybind3.Path = "Id";
-            workflowparameterbinding3.ParameterName = "orderId";
-            workflowparameterbinding3.SetBinding(System.Workflow.ComponentModel.WorkflowParameterBinding.ValueProperty, ((System.Workflow.ComponentModel.ActivityBind)(activitybind3)));
-            activitybind4.Name = "OrderProcessingWorkflow";
-            activitybind4.Path = "ItemStatus";
-            workflowparameterbinding4.ParameterName = "newStatus";
-            workflowparameterbinding4.SetBinding(System.Workflow.ComponentModel.WorkflowParameterBinding.ValueProperty, ((System.Workflow.ComponentModel.ActivityBind)(activitybind4)));
-            this.invokeProcessingNewOrderStatusUpdate.ParameterBindings.Add(workflowparameterbinding3);
-            this.invokeProcessingNewOrderStatusUpdate.ParameterBindings.Add(workflowparameterbinding4);
             // 
             // setStateActivityOrderProcessing
             // 
@@ -99,6 +76,7 @@ namespace StateMachineWorkflow
             this.newOrderExternalEvent.EventName = "NewOrder";
             this.newOrderExternalEvent.InterfaceType = typeof(StateMachineWorkflow.IOrderingService);
             this.newOrderExternalEvent.Name = "newOrderExternalEvent";
+            this.newOrderExternalEvent.Invoked += new System.EventHandler<System.Workflow.Activities.ExternalDataEventArgs>(this.newOrderExternalEvent_Invoked);
             // 
             // initializeOrderOpenStateActivity
             // 
@@ -143,36 +121,27 @@ namespace StateMachineWorkflow
 
         #endregion
 
+        private SetStateActivity setStateActivityOrderProcessing;
+
+        private CallExternalMethodActivity updatestatusOrderReceived;
+
+        private SetStateActivity setStateActivityOrderCompleted;
+
         private CallExternalMethodActivity invokeOrderProcessedStatusUpdate;
 
         private CallExternalMethodActivity invokeProcessingNewOrderStatusUpdate;
 
         private StateInitializationActivity initializeOrderOpenStateActivity;
 
-        private SetStateActivity setStateActivityOrderCompleted;
-
         private StateActivity OrderCompletedStateActivity;
 
         private StateActivity OrderProcessingStateActivity;
 
-        private SetStateActivity setStateActivityOrderProcessing;
-
-        private CallExternalMethodActivity updatestatusOrderReceived;
+        private StateActivity WaitingForOrderStateActivity;
 
         private HandleExternalEventActivity newOrderExternalEvent;
 
         private EventDrivenActivity eventDriven1;
-
-        private StateActivity WaitingForOrderStateActivity;
-
-
-
-
-
-
-
-
-
 
 
 
