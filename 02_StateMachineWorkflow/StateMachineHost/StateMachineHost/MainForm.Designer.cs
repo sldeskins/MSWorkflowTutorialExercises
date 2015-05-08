@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace StateMachineHost
+namespace ExampleStateMachine//StateMachineHost
 {
     partial class MainForm
     {

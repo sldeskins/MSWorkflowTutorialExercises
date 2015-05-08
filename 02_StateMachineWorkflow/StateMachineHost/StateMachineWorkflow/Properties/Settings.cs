@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace StateMachineWorkflow.Properties
+namespace ExampleStateMachine.Properties// StateMachineWorkflow.Properties
 {
 
 

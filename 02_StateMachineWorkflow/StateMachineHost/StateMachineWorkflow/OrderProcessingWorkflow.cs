@@ -11,17 +11,17 @@ using System.Workflow.Runtime;
 using System.Workflow.Activities;
 using System.Workflow.Activities.Rules;
 
-namespace StateMachineWorkflow
+namespace ExampleStateMachine//StateMachineWorkflow
 {
     public sealed partial class OrderProcessingWorkflow : StateMachineWorkflowActivity
     {
 
 
         //
-        private NewOrderEventArgs receivedOrderDetails = null;
+        public NewOrderEventArgs receivedOrderDetails = null;
 
         // OrderProcessingStateActivity Activities
-        private Guid orderId;
+        public Guid orderId;
         public Guid Id
         {
             get
@@ -42,7 +42,7 @@ namespace StateMachineWorkflow
         private Int32 orderQuantity;
 
 
-        private string orderItemStatus;
+        public string orderItemStatus;
         public string ItemStatus
         {
             get
@@ -74,7 +74,7 @@ namespace StateMachineWorkflow
             this.orderItemStatus = "Order processed";
         }
 
-        public static DependencyProperty invokeProcessingNewOrderStatusUpdate_newStatus1Property = DependencyProperty.Register("invokeProcessingNewOrderStatusUpdate_newStatus1", typeof(System.String), typeof(StateMachineWorkflow.OrderProcessingWorkflow));
+        public static DependencyProperty invokeProcessingNewOrderStatusUpdate_newStatus1Property = DependencyProperty.Register("invokeProcessingNewOrderStatusUpdate_newStatus1", typeof(System.String), typeof(ExampleStateMachine.OrderProcessingWorkflow));
 
         [DesignerSerializationVisibilityAttribute(DesignerSerializationVisibility.Visible)]
         [BrowsableAttribute(true)]
@@ -83,15 +83,15 @@ namespace StateMachineWorkflow
         {
             get
             {
-                return ((string)(base.GetValue(StateMachineWorkflow.OrderProcessingWorkflow.invokeProcessingNewOrderStatusUpdate_newStatus1Property)));
+                return ((string)(base.GetValue(ExampleStateMachine.OrderProcessingWorkflow.invokeProcessingNewOrderStatusUpdate_newStatus1Property)));
             }
             set
             {
-                base.SetValue(StateMachineWorkflow.OrderProcessingWorkflow.invokeProcessingNewOrderStatusUpdate_newStatus1Property, value);
+                base.SetValue(ExampleStateMachine.OrderProcessingWorkflow.invokeProcessingNewOrderStatusUpdate_newStatus1Property, value);
             }
         }
 
-        public static DependencyProperty invokeOrderProcessedStatusUpdate_newStatus1Property = DependencyProperty.Register("invokeOrderProcessedStatusUpdate_newStatus1", typeof(System.String), typeof(StateMachineWorkflow.OrderProcessingWorkflow));
+        public static DependencyProperty invokeOrderProcessedStatusUpdate_newStatus1Property = DependencyProperty.Register("invokeOrderProcessedStatusUpdate_newStatus1", typeof(System.String), typeof(ExampleStateMachine.OrderProcessingWorkflow));
 
         [DesignerSerializationVisibilityAttribute(DesignerSerializationVisibility.Visible)]
         [BrowsableAttribute(true)]
@@ -100,11 +100,11 @@ namespace StateMachineWorkflow
         {
             get
             {
-                return ((string)(base.GetValue(StateMachineWorkflow.OrderProcessingWorkflow.invokeOrderProcessedStatusUpdate_newStatus1Property)));
+                return ((string)(base.GetValue(ExampleStateMachine.OrderProcessingWorkflow.invokeOrderProcessedStatusUpdate_newStatus1Property)));
             }
             set
             {
-                base.SetValue(StateMachineWorkflow.OrderProcessingWorkflow.invokeOrderProcessedStatusUpdate_newStatus1Property, value);
+                base.SetValue(ExampleStateMachine.OrderProcessingWorkflow.invokeOrderProcessedStatusUpdate_newStatus1Property, value);
             }
         }
 

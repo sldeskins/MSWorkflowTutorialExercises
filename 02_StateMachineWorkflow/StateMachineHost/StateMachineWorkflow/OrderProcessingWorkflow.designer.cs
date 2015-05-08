@@ -11,7 +11,7 @@ using System.Workflow.Runtime;
 using System.Workflow.Activities;
 using System.Workflow.Activities.Rules;
 
-namespace StateMachineWorkflow
+namespace ExampleStateMachine//StateMachineWorkflow
 {
     partial class OrderProcessingWorkflow
     {
@@ -31,6 +31,12 @@ namespace StateMachineWorkflow
         private void InitializeComponent ()
         {
             this.CanModifyActivities = true;
+            System.Workflow.ComponentModel.ActivityBind activitybind1 = new System.Workflow.ComponentModel.ActivityBind();
+            System.Workflow.ComponentModel.WorkflowParameterBinding workflowparameterbinding1 = new System.Workflow.ComponentModel.WorkflowParameterBinding();
+            System.Workflow.ComponentModel.ActivityBind activitybind2 = new System.Workflow.ComponentModel.ActivityBind();
+            System.Workflow.ComponentModel.WorkflowParameterBinding workflowparameterbinding2 = new System.Workflow.ComponentModel.WorkflowParameterBinding();
+            System.Workflow.ComponentModel.ActivityBind activitybind3 = new System.Workflow.ComponentModel.ActivityBind();
+            System.Workflow.ComponentModel.WorkflowParameterBinding workflowparameterbinding3 = new System.Workflow.ComponentModel.WorkflowParameterBinding();
             this.setStateActivityOrderCompleted = new System.Workflow.Activities.SetStateActivity();
             this.invokeOrderProcessedStatusUpdate = new System.Workflow.Activities.CallExternalMethodActivity();
             this.invokeProcessingNewOrderStatusUpdate = new System.Workflow.Activities.CallExternalMethodActivity();
@@ -50,15 +56,29 @@ namespace StateMachineWorkflow
             // 
             // invokeOrderProcessedStatusUpdate
             // 
-            this.invokeOrderProcessedStatusUpdate.InterfaceType = typeof(StateMachineWorkflow.IOrderingService);
+            this.invokeOrderProcessedStatusUpdate.InterfaceType = typeof(ExampleStateMachine.IOrderingService);
             this.invokeOrderProcessedStatusUpdate.MethodName = "ItemStatusUpdate";
             this.invokeOrderProcessedStatusUpdate.Name = "invokeOrderProcessedStatusUpdate";
+            activitybind1.Name = "OrderProcessingWorkflow";
+            activitybind1.Path = "orderId";
+            workflowparameterbinding1.ParameterName = "orderId";
+            workflowparameterbinding1.SetBinding(System.Workflow.ComponentModel.WorkflowParameterBinding.ValueProperty, ((System.Workflow.ComponentModel.ActivityBind)(activitybind1)));
+            activitybind2.Name = "OrderProcessingWorkflow";
+            activitybind2.Path = "orderItemStatus";
+            workflowparameterbinding2.ParameterName = "newStatus";
+            workflowparameterbinding2.SetBinding(System.Workflow.ComponentModel.WorkflowParameterBinding.ValueProperty, ((System.Workflow.ComponentModel.ActivityBind)(activitybind2)));
+            this.invokeOrderProcessedStatusUpdate.ParameterBindings.Add(workflowparameterbinding1);
+            this.invokeOrderProcessedStatusUpdate.ParameterBindings.Add(workflowparameterbinding2);
+            this.invokeOrderProcessedStatusUpdate.MethodInvoking += new System.EventHandler(this.FinalizeOrder);
             // 
             // invokeProcessingNewOrderStatusUpdate
             // 
-            this.invokeProcessingNewOrderStatusUpdate.InterfaceType = typeof(StateMachineWorkflow.IOrderingService);
+            this.invokeProcessingNewOrderStatusUpdate.InterfaceType = typeof(ExampleStateMachine.IOrderingService);
             this.invokeProcessingNewOrderStatusUpdate.MethodName = "ItemStatusUpdate";
             this.invokeProcessingNewOrderStatusUpdate.Name = "invokeProcessingNewOrderStatusUpdate";
+            this.invokeProcessingNewOrderStatusUpdate.ParameterBindings.Add(workflowparameterbinding1);
+            this.invokeProcessingNewOrderStatusUpdate.ParameterBindings.Add(workflowparameterbinding2);
+            this.invokeProcessingNewOrderStatusUpdate.MethodInvoking += new System.EventHandler(this.ProcessNewOrder);
             // 
             // setStateActivityOrderProcessing
             // 
@@ -67,15 +87,23 @@ namespace StateMachineWorkflow
             // 
             // updatestatusOrderReceived
             // 
-            this.updatestatusOrderReceived.InterfaceType = typeof(StateMachineWorkflow.IOrderingService);
+            this.updatestatusOrderReceived.InterfaceType = typeof(ExampleStateMachine.IOrderingService);
             this.updatestatusOrderReceived.MethodName = "ItemStatusUpdate";
             this.updatestatusOrderReceived.Name = "updatestatusOrderReceived";
+            this.updatestatusOrderReceived.ParameterBindings.Add(workflowparameterbinding1);
+            this.updatestatusOrderReceived.ParameterBindings.Add(workflowparameterbinding2);
+            this.updatestatusOrderReceived.MethodInvoking += new System.EventHandler(this.OrderReceived);
             // 
             // newOrderExternalEvent
             // 
             this.newOrderExternalEvent.EventName = "NewOrder";
-            this.newOrderExternalEvent.InterfaceType = typeof(StateMachineWorkflow.IOrderingService);
+            this.newOrderExternalEvent.InterfaceType = typeof(ExampleStateMachine.IOrderingService);
             this.newOrderExternalEvent.Name = "newOrderExternalEvent";
+            activitybind3.Name = "OrderProcessingWorkflow";
+            activitybind3.Path = "receivedOrderDetails";
+            workflowparameterbinding3.ParameterName = "e";
+            workflowparameterbinding3.SetBinding(System.Workflow.ComponentModel.WorkflowParameterBinding.ValueProperty, ((System.Workflow.ComponentModel.ActivityBind)(activitybind3)));
+            this.newOrderExternalEvent.ParameterBindings.Add(workflowparameterbinding3);
             this.newOrderExternalEvent.Invoked += new System.EventHandler<System.Workflow.Activities.ExternalDataEventArgs>(this.newOrderExternalEvent_Invoked);
             // 
             // initializeOrderOpenStateActivity
@@ -142,6 +170,20 @@ namespace StateMachineWorkflow
         private HandleExternalEventActivity newOrderExternalEvent;
 
         private EventDrivenActivity eventDriven1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

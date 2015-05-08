@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Workflow.Activities;
 
-namespace StateMachineWorkflow
+namespace  ExampleStateMachine// StateMachineWorkflow
 {
     [ExternalDataExchange]
     public interface IOrderingService

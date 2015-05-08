@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace StateMachineHost.Properties
+namespace ExampleStateMachine.Properties // StateMachineHost.Properties
 {
 
 

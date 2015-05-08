@@ -9,10 +9,10 @@ using System.Windows.Forms;
 using System.Workflow.Activities;
 using System.Workflow.Runtime;
 using System.Workflow.ComponentModel;
-using StateMachineWorkflow;
+using ExampleStateMachine;
 
 
-namespace StateMachineHost
+namespace ExampleStateMachine// StateMachineHost
 {
     public partial class MainForm : Form, IOrderingService
     {
@@ -67,7 +67,7 @@ namespace StateMachineHost
 
         public void ItemStatusUpdate ( Guid orderId, string newStatus )
         {
-            if (ordersIdList.InvokeRequired)
+            if (ordersIdList.InvokeRequired == true)
             {
                 object[] args = new object[2] { orderId, newStatus };
                 ItemStatusUpdateDelegate statusUpdate = new ItemStatusUpdateDelegate(ItemStatusUpdate);

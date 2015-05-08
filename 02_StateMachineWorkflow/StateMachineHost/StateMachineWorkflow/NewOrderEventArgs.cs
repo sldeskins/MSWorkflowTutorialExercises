@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Workflow.Activities;
-namespace StateMachineWorkflow
+
+namespace ExampleStateMachine //StateMachineWorkflow
 {
     [Serializable]
     public class NewOrderEventArgs : ExternalDataEventArgs
